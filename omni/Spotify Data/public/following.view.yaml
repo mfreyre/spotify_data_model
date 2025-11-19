@@ -1,0 +1,15 @@
+# Reference this view as following
+schema: public
+
+dimensions:
+  uri: {}
+  username: {}
+  created_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count

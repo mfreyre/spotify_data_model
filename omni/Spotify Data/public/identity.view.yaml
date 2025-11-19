@@ -1,0 +1,17 @@
+# Reference this view as identity
+schema: public
+
+dimensions:
+  display_name: {}
+  first_name: {}
+  last_name: {}
+  identity_data: {}
+  created_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count
