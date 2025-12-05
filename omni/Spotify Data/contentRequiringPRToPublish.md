@@ -1,6 +1,4 @@
-# Tracked Documents
-
-Documents that require pull request approval before publishing:
+# Content requiring pull request approval before publishing
 
 | Document | Identifier | Last Modified | Last Modified (UTC) |
 | -------- | ---------- | ------------- | ------------------- |
