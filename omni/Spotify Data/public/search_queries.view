@@ -1,0 +1,17 @@
+# Reference this view as search_queries
+schema: public
+
+dimensions:
+  platform: {}
+  search_time: {}
+  search_query: {}
+  search_interaction_uris: {}
+  created_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count
