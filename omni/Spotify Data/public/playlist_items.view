@@ -1,0 +1,22 @@
+# Reference this view as playlist_items
+schema: public
+
+dimensions:
+  track_name: {}
+  artist_name: {}
+  album_name: {}
+  track_uri: {}
+  item_type: {}
+  added_date: {}
+  created_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  playlist_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

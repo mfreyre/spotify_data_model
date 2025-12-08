@@ -1,0 +1,21 @@
+# Reference this view as playlist_listening_stats
+schema: public
+
+dimensions:
+  playlist_name: {}
+  last_modified_date: {}
+  total_tracks: {}
+  unique_track_uris: {}
+  total_plays_from_playlist: {}
+  total_ms_played: {}
+  total_hours: {}
+  days_listened: {}
+  first_play_from_playlist: {}
+  last_play_from_playlist: {}
+
+  playlist_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count
