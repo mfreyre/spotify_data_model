@@ -2,7 +2,9 @@
 schema: public
 
 dimensions:
-  display_name: {}
+  display_name:
+    {}
+    # here is a comment
   first_name: {}
   last_name: {}
   identity_data: {}
