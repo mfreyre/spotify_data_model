@@ -1,2 +1,1 @@
-# this is the Playlist topic
-{}
+base_view: public.playlists
