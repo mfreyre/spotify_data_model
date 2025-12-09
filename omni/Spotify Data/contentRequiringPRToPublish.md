@@ -6,7 +6,7 @@
 | spotify playlist info  | 0fa0e479 | 2025-12-05 | 2025-12-05T22:42:12.448Z |
 | Capsule Data | 11ba21ce | 2025-12-08 | 2025-12-08T23:11:28.927Z |
 | podcast dashboard | 34c587ca | 2025-11-19 | 2025-11-19T20:22:50.664Z |
-| duplicate | 37598adb | 2025-11-20 | 2025-11-20T20:17:27.393Z |
+| users and streaming history of artists | 37598adb | 2025-12-09 | 2025-12-09T23:06:04.298Z |
 | followers info | 7415b98f | 2025-12-09 | 2025-12-09T23:04:34.721Z |
 | Payments PR Required | 889ab5f0 | 2025-12-09 | 2025-12-09T21:05:40.144Z |
 | test as rq | c9071441 | 2025-12-08 | 2025-12-08T21:04:25.627Z |
