@@ -1,0 +1,33 @@
+# Reference this view as kaggle__spotify_songs
+schema: kaggle
+table_name: spotify_songs
+
+dimensions:
+  artist_name: {}
+  song_name: {}
+  language: {}
+  lyrics: {}
+  genres: {}
+  artist_popularity: {}
+  acousticness: {}
+  danceability: {}
+  energy: {}
+  instrumentalness: {}
+  key: {}
+  liveness: {}
+  loudness: {}
+  mode: {}
+  speechiness: {}
+  tempo: {}
+  time_signature: {}
+  valence: {}
+  duration_ms: {}
+  created_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count

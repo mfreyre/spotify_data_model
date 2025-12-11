@@ -1,0 +1,23 @@
+# Reference this view as kaggle__movies
+schema: kaggle
+table_name: movies
+
+dimensions:
+  title: {}
+  overview: {}
+  release_date: {}
+  popularity: {}
+  vote_average: {}
+  vote_count: {}
+  created_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  tmdb_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count
