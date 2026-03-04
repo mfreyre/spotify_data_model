@@ -1,2 +1,7 @@
+base_view: playlists
+label: Playlists
+
 # this is the playlists topic
-joins: {}
+joins:
+  playlist_items: {}
+  playlist_listening_stats: {}
