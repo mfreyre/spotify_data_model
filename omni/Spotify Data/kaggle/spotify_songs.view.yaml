@@ -23,10 +23,18 @@ dimensions:
   valence: {}
   duration_ms: {}
   created_at: {}
+  album_name: {}
+  release_year: {}
+  genre: {}
+  explicit: {}
+  popularity: {}
 
   id:
     format: ID
     primary_key: true
+
+  track_id:
+    format: ID
 
 measures:
   count:
