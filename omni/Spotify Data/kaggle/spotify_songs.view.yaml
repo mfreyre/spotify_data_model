@@ -38,4 +38,100 @@ dimensions:
 
 measures:
   count:
+    label: Number of Songs
     aggregate_type: count
+
+  count_distinct_artists:
+    sql: ${kaggle__spotify_songs.artist_name}
+    label: Number of Artists
+    aggregate_type: count_distinct
+
+  count_distinct_albums:
+    sql: ${kaggle__spotify_songs.album_name}
+    label: Number of Albums
+    aggregate_type: count_distinct
+
+  avg_popularity:
+    sql: ${kaggle__spotify_songs.popularity}
+    label: Average Popularity
+    format: number_1
+    aggregate_type: average
+
+  max_popularity:
+    sql: ${kaggle__spotify_songs.popularity}
+    label: Max Popularity
+    format: number_0
+    aggregate_type: max
+
+  avg_artist_popularity:
+    sql: ${kaggle__spotify_songs.artist_popularity}
+    label: Average Artist Popularity
+    format: number_1
+    aggregate_type: average
+
+  avg_danceability:
+    sql: ${kaggle__spotify_songs.danceability}
+    label: Average Danceability
+    format: number_2
+    aggregate_type: average
+
+  avg_energy:
+    sql: ${kaggle__spotify_songs.energy}
+    label: Average Energy
+    format: number_2
+    aggregate_type: average
+
+  avg_valence:
+    sql: ${kaggle__spotify_songs.valence}
+    label: Average Valence (Positivity)
+    format: number_2
+    aggregate_type: average
+
+  avg_acousticness:
+    sql: ${kaggle__spotify_songs.acousticness}
+    label: Average Acousticness
+    format: number_2
+    aggregate_type: average
+
+  avg_instrumentalness:
+    sql: ${kaggle__spotify_songs.instrumentalness}
+    label: Average Instrumentalness
+    format: number_2
+    aggregate_type: average
+
+  avg_speechiness:
+    sql: ${kaggle__spotify_songs.speechiness}
+    label: Average Speechiness
+    format: number_2
+    aggregate_type: average
+
+  avg_liveness:
+    sql: ${kaggle__spotify_songs.liveness}
+    label: Average Liveness
+    format: number_2
+    aggregate_type: average
+
+  avg_loudness:
+    sql: ${kaggle__spotify_songs.loudness}
+    label: Average Loudness (dB)
+    format: number_1
+    aggregate_type: average
+
+  avg_tempo:
+    sql: ${kaggle__spotify_songs.tempo}
+    label: Average Tempo (BPM)
+    format: number_1
+    aggregate_type: average
+
+  avg_duration_ms:
+    sql: ${kaggle__spotify_songs.duration_ms}
+    label: Average Duration (ms)
+    format: number_0
+    aggregate_type: average
+
+  count_explicit:
+    label: Explicit Songs
+    aggregate_type: count
+    filters:
+      explicit:
+        is: true
