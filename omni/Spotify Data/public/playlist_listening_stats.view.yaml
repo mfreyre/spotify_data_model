@@ -2,20 +2,47 @@
 schema: public
 
 dimensions:
-  playlist_name: {}
   last_modified_date: {}
-  total_tracks: {}
-  unique_track_uris: {}
-  total_plays_from_playlist: {}
-  total_ms_played: {}
-  total_hours: {}
-  days_listened: {}
-  first_play_from_playlist: {}
-  last_play_from_playlist: {}
+
+  playlist_name:
+    description: Playlist name — prefer playlists.name when joined to the playlists view
+
+  total_tracks:
+    description: Total number of tracks in the playlist
+
+  unique_track_uris:
+    description: Count of unique track URIs in the playlist
+
+  total_plays_from_playlist:
+    description: Total number of play events from this playlist
+
+  total_ms_played:
+    description: Total milliseconds played — prefer total_hours for display
+    hidden: true
+
+  total_hours:
+    description: Total hours of listening from this playlist
+
+  days_listened:
+    description: Number of distinct days the playlist was listened to
+
+  first_play_from_playlist:
+    description: Date of the first play from this playlist
+
+  last_play_from_playlist:
+    description: Date of the most recent play from this playlist
 
   playlist_id:
     format: ID
+    hidden: true
 
 measures:
   count:
+    label: Listening Stats Count
+    hidden: true
     aggregate_type: count
+
+ai_context: Pre-aggregated listening stats per playlist. One row per playlist.
+  Do not treat as raw event data. Prefer total_hours over total_ms_played for
+  human-readable output. Prefer playlists.name over playlist_name when joining
+  to the playlists view.

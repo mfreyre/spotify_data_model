@@ -2,7 +2,6 @@
 schema: public
 
 dimensions:
-  ts: {}
   username: {}
   platform: {}
   ms_played: {}
@@ -24,6 +23,9 @@ dimensions:
   offline_timestamp: {}
   incognito_mode: {}
   created_at: {}
+
+  ts:
+    timeframes: [ raw, date, week, month, quarter, year, fiscal_quarter, fiscal_year ]
 
   id:
     format: ID

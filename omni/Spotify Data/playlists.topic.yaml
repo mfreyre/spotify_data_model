@@ -3,5 +3,15 @@ label: Playlists
 
 # this is the playlists topic
 joins:
-  playlist_items: {}
+  playlist_items:
+    extended_streaming_history: {}
   playlist_listening_stats: {}
+
+ai_context: Use this topic for questions about user playlists, their tracks, and
+  listening behavior. The base view is playlists (one row per playlist).
+  playlist_items contains the tracks in each playlist. playlist_listening_stats
+  is a pre-aggregated summary of listening activity per playlist (total plays,
+  hours, days listened, etc.) — do not treat it as raw event data.
+  extended_streaming_history contains raw streaming events with timestamps — use
+  it for time-based analysis like fiscal quarter breakdowns of listening
+  activity.
