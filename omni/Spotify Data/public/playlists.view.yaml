@@ -2,14 +2,21 @@
 schema: public
 
 dimensions:
-  name: {}
-  last_modified_date: {}
-  created_at: {}
+  name:
+    label: Playlist Name
+
+  last_modified_date:
+    description: Date the playlist was last modified
+
+  created_at:
+    description: Date the playlist was created
 
   id:
     format: ID
+    hidden: true
     primary_key: true
 
 measures:
   count:
+    label: Playlist Count
     aggregate_type: count

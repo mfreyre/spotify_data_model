@@ -1,1 +1,8 @@
-{}
+ai_context: "This model contains Spotify music data: a Playlists topic (user
+  playlists, their tracks, and listening stats) and a Spotify Songs topic (a
+  Kaggle dataset of songs with audio features). Use the Playlists topic for
+  questions about listening behavior and playlist composition. Use the Spotify
+  Songs topic for questions about song characteristics, popularity, and audio
+  features."
+
+fiscal_month_offset: 11
