@@ -20,6 +20,9 @@ dimensions:
   tmdb_id:
     format: ID
 
+  fiscal_quarter_label:
+    sql: ${kaggle__movies.created_at[fiscal_quarter]}
+
 measures:
   count:
     aggregate_type: count
