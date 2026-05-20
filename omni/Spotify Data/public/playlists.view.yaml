@@ -1,4 +1,6 @@
 # Reference this view as playlists
+schema: public
+
 dimensions:
   name:
     label: Playlist Name
@@ -10,7 +12,9 @@ dimensions:
     description: Date the playlist was created
 
   id:
+    format: ID
     hidden: true
+    primary_key: true
 
 measures:
   count:

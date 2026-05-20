@@ -1,4 +1,0 @@
-# Reference this view as extended_streaming_history
-dimensions:
-  ts:
-    timeframes: [ raw, date, week, month, quarter, year, fiscal_quarter, fiscal_year ]
