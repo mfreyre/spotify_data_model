@@ -1,9 +1,5 @@
 # Reference this view as playlist_listening_stats
-schema: public
-
 dimensions:
-  last_modified_date: {}
-
   playlist_name:
     description: Playlist name — prefer playlists.name when joined to the playlists view
 
@@ -33,7 +29,6 @@ dimensions:
     description: Date of the most recent play from this playlist
 
   playlist_id:
-    format: ID
     hidden: true
 
 measures:

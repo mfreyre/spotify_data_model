@@ -1,19 +1,5 @@
 # Reference this view as kaggle__spotify_songs
-schema: kaggle
-table_name: spotify_songs
-
 dimensions:
-  artist_name: {}
-  song_name: {}
-  language: {}
-  album_name: {}
-  release_year: {}
-  artist_followers: {}
-  album_release_date: {}
-  album_total_tracks: {}
-  album_type: {}
-  track_number: {}
-
   lyrics:
     hidden: true
 
@@ -83,16 +69,10 @@ dimensions:
     description: Spotify track popularity score (0–100)
 
   id:
-    format: ID
     hidden: true
-    primary_key: true
 
   track_id:
-    format: ID
     hidden: true
-
-  album_id:
-    format: ID
 
 measures:
   count:
