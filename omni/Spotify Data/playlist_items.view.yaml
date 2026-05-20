@@ -1,11 +1,5 @@
 # Reference this view as playlist_items
-schema: public
-
 dimensions:
-  track_name: {}
-  artist_name: {}
-  album_name: {}
-
   track_uri:
     hidden: true
 
@@ -21,12 +15,9 @@ dimensions:
     hidden: true
 
   id:
-    format: ID
     hidden: true
-    primary_key: true
 
   playlist_id:
-    format: ID
     hidden: true
 
 measures:

@@ -1,0 +1,5 @@
+# Reference this view as identity
+dimensions:
+  display_name:
+    {}
+    # here is a comment
