@@ -8,6 +8,11 @@ dimensions:
   language: {}
   album_name: {}
   release_year: {}
+  artist_followers: {}
+  album_release_date: {}
+  album_total_tracks: {}
+  album_type: {}
+  track_number: {}
 
   lyrics:
     hidden: true
@@ -85,6 +90,9 @@ dimensions:
   track_id:
     format: ID
     hidden: true
+
+  album_id:
+    format: ID
 
 measures:
   count:
