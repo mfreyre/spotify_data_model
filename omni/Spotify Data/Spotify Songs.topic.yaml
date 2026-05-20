@@ -1,9 +1,0 @@
-base_view: kaggle__spotify_songs
-label: Spotify Songs
-
-joins: {}
-
-ai_context: Use this topic for questions about song characteristics, audio
-  features, popularity, and genre. One row per song. Audio features
-  (danceability, energy, valence, etc.) are Spotify-computed 0–1 scores. Use
-  avg_ measures for comparisons across groups.

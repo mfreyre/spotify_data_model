@@ -1,7 +1,0 @@
-# Reference this view as kaggle__movies
-dimensions:
-  title:
-    display_order: 0
-
-  fiscal_quarter_label:
-    sql: ${kaggle__movies.created_at[fiscal_quarter]}
