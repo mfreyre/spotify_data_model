@@ -1,4 +1,1 @@
-# Reference this view as podcast_interactions
-dimensions:
-  interaction_type: {}
-  interaction_data: {}
+{}
